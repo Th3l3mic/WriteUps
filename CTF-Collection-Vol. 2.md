@@ -125,3 +125,8 @@ Hint: Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_2 like Mac OS X) AppleWebKit/605.1
 Let's modify user-agent in pour request using burp, or curl: 
 <code>curl -s --user-agent "Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.1 Mobile/15E148 Safari/604.1" http://targetIP/ | grep "Easter 8"</code>
 
+<h2>Egg 9</h2>
+Hint: Something is redirected too fast. You need to capture it.
+Use burp or curl!
+
+
