@@ -129,4 +129,10 @@ Let's modify user-agent in pour request using burp, or curl:
 Hint: Something is redirected too fast. You need to capture it.
 Use burp or curl!
 
+<h2>Egg 10</h2>
+Hint: Look at THM URL without https:// and use it as a referrer.
+On maine page we see /free_sub/ link, let's change our request in burp adding Referrer: tryhackme.com or we could use curl:
+
+<code>curl -s --referer "tryhackme.com" http://targetIP/free_sub</code>
+
 
