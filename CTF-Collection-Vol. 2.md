@@ -108,7 +108,7 @@ After quick goole search we've got hash value and DesKel password! So let's logi
 Hint: Look out for the response header.
 
 We could use Burp suite ora curl:
-<code> curl -s 10.10.141.149 -D header.txt<.code>
+<code> curl -s targetIP -D header.txt<.code>
 Easy!
 
 <h2>Egg 7</h2>
@@ -123,5 +123,5 @@ As we intercept our request in Burp we can see tha there's a cookie named: "Invi
 Hint: Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.1 Mobile/15E148 Safari/604.1
 
 Let's modify user-agent in pour request using burp, or curl: 
-<code>curl -s --user-agent "Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.1 Mobile/15E148 Safari/604.1" http://10.10.141.149/ | grep "Easter 8"</code>
+<code>curl -s --user-agent "Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.1 Mobile/15E148 Safari/604.1" http://targetIP/ | grep "Easter 8"</code>
 
