@@ -103,3 +103,18 @@ Table: user
 
 After quick goole search we've got hash value and DesKel password! So let's login and receive egg 5!
 
+
+<h2>Egg 6</h2>
+Hint: Look out for the response header.
+
+We could use Burp suite ora curl:
+<code> curl -s 10.10.141.149 -D header.txt<.code>
+Easy!
+
+<h2>Egg 7</h2>
+Hint: Cookie is delicious
+![cookie](https://github.com/Th3l3mic/WriteUps/assets/167564930/b278ceb5-ae63-449b-8d1a-6c5868f2d731)
+
+As we intercept our request in Burp we can see tha thereś a cookie anmed Invited set to value 0, letś modify this and set it to 1. It's look's like we've got 7th egg!
+
+
