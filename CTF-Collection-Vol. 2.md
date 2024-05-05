@@ -113,8 +113,15 @@ Easy!
 
 <h2>Egg 7</h2>
 Hint: Cookie is delicious
-![cookie](https://github.com/Th3l3mic/WriteUps/assets/167564930/b278ceb5-ae63-449b-8d1a-6c5868f2d731)
+<p></p>
 
-As we intercept our request in Burp we can see tha thereś a cookie anmed Invited set to value 0, letś modify this and set it to 1. It's look's like we've got 7th egg!
+![cookie](https://github.com/Th3l3mic/WriteUps/assets/167564930/f22b4cc4-d5bd-4cb6-a80a-a027b3e13a55)
 
+As we intercept our request in Burp we can see tha there's a cookie named: "Invited" set to value 0, let's modify this and set it to 1. No it's look like we've got 7th egg!
+
+<h2>Egg 8</h2>
+Hint: Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.1 Mobile/15E148 Safari/604.1
+
+Let's modify user-agent in pour request using burp, or curl: 
+<code>curl -s --user-agent "Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.1 Mobile/15E148 Safari/604.1" http://10.10.141.149/ | grep "Easter 8"</code>
 
